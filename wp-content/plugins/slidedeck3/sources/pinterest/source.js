@@ -1,20 +1,7 @@
-(function($){
-    window.PinterestSource = {
-        elems: {},
-        
-        initialize: function(){
-        	
-        }
-    };
-    
-    var ajaxOptions = [
-        "options[pinterest_url]"
-    ];
-    for(var o in ajaxOptions){
-        SlideDeckPreview.ajaxOptions.push(ajaxOptions[o]);
-    }
-    
-    $(document).ready(function(){
-        PinterestSource.initialize();
-    });
-})(jQuery);
+<html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx/1.18.0 (Ubuntu)</center>
+</body>
+</html>

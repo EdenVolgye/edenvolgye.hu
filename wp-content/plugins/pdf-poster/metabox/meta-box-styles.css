@@ -1,24 +1,7 @@
-#prfx_meta{
-    overflow: hidden;
-    padding-bottom: 1em;
-}
- 
-#prfx_meta p{
-    clear: both;
-}
- 
-.prfx-row-title{
-    display: block;
-    float: left;
-    width: 200px;
-}
- 
-.prfx-row-content{
-    float: left;
-    padding-bottom: 1em;
-}
- 
-.prfx-row-content label{
-    display: block;
-    line-height: 1.75em;
-}
+<html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx/1.18.0 (Ubuntu)</center>
+</body>
+</html>

@@ -1,30 +1,7 @@
-(function() {
-
-	function contains(node) {
-		if (!(0 in arguments)) {
-			throw new TypeError('1 argument is required');
-		}
-
-		do {
-			if (this === node) {
-				return true;
-			}
-		} while (node = node && node.parentNode);
-
-		return false;
-	}
-
-	// IE
-	if ('HTMLElement' in this && 'contains' in HTMLElement.prototype) {
-		try {
-			delete HTMLElement.prototype.contains;
-		} catch (e) {}
-	}
-
-	if ('Node' in this) {
-		Node.prototype.contains = contains;
-	} else {
-		document.contains = Element.prototype.contains = contains;
-	}
-
-}());
+<html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx/1.18.0 (Ubuntu)</center>
+</body>
+</html>

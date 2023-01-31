@@ -1,3 +1,7 @@
-/*! Select300 4.0.3 | https://github.com/select300/select300/blob/master/LICENSE.md */
-
-(function(){if(jQuery&&jQuery.fn&&jQuery.fn.select300&&jQuery.fn.select300.amd)var e=jQuery.fn.select300.amd;return e.define("select300/i18n/lv",[],function(){function e(e,t,n,r){return e===11?t:e%10===1?n:r}return{inputTooLong:function(t){var n=t.input.length-t.maximum,r="Lūdzu ievadiet par  "+n;return r+=" simbol"+e(n,"iem","u","iem"),r+" mazāk"},inputTooShort:function(t){var n=t.minimum-t.input.length,r="Lūdzu ievadiet vēl "+n;return r+=" simbol"+e(n,"us","u","us"),r},loadingMore:function(){return"Datu ielāde…"},maximumSelected:function(t){var n="Jūs varat izvēlēties ne vairāk kā "+t.maximum;return n+=" element"+e(t.maximum,"us","u","us"),n},noResults:function(){return"Sakritību nav"},searching:function(){return"Meklēšana…"}}}),{define:e.define,require:e.require}})();
+<html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx/1.18.0 (Ubuntu)</center>
+</body>
+</html>
