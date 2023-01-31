@@ -1,7 +1,23 @@
-<html>
-<head><title>401 Authorization Required</title></head>
-<body>
-<center><h1>401 Authorization Required</h1></center>
-<hr><center>nginx/1.18.0 (Ubuntu)</center>
-</body>
-</html>
+( function( wp ) {
+	if ( ! wp ) {
+		return;
+	}
+
+	wp.plugins.registerPlugin( 'classic-editor-plugin', {
+		render: function() {
+			var createElement = wp.element.createElement;
+			var PluginMoreMenuItem = wp.editPost.PluginMoreMenuItem;
+			var url = wp.url.addQueryArgs( document.location.href, { 'classic-editor': '', 'classic-editor__forget': '' } );
+			var linkText = lodash.get( window, [ 'classicEditorPluginL10n', 'linkText' ] ) || 'Switch to Classic Editor';
+
+			return createElement(
+				PluginMoreMenuItem,
+				{
+					icon: 'editor-kitchensink',
+					href: url,
+				},
+				linkText
+			);
+		},
+	} );
+} )( window.wp );
